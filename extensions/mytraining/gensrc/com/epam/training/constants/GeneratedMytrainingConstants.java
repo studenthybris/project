@@ -1,7 +1,7 @@
 /*
  * ----------------------------------------------------------------
  * --- WARNING: THIS FILE IS GENERATED AND WILL BE OVERWRITTEN! ---
- * --- Generated at Dec 15, 2017 1:00:03 PM                     ---
+ * --- Generated at Dec 15, 2017 6:31:36 PM                     ---
  * ----------------------------------------------------------------
  */
 package com.epam.training.constants;
@@ -14,6 +14,19 @@ package com.epam.training.constants;
 public class GeneratedMytrainingConstants
 {
 	public static final String EXTENSIONNAME = "mytraining";
+	public static class TC
+	{
+		public static final String MYCUSTOMER = "MyCustomer".intern();
+		public static final String ORGANIZATION = "Organization".intern();
+	}
+	public static class Attributes
+	{
+		// no constants defined.
+	}
+	public static class Relations
+	{
+		public static final String MYCUSTOMERORGANIZATION = "MyCustomerOrganization".intern();
+	}
 	
 	protected GeneratedMytrainingConstants()
 	{
