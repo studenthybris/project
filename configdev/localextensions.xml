@@ -24,6 +24,8 @@
 		
 		<extension name="mytraining" />
 		
+		<extension name="mytraininghmc" />
+		
 		<!-- ext-platform-optional -->
 
 												
@@ -57,7 +59,7 @@
 		<!-- <extension name="groovynature" />-->
 
 												
-		<!-- <extension name="hmc" />-->
+		<extension name="hmc" />
 
 												
 		<!-- <extension name="y2ysynchmc" />-->
