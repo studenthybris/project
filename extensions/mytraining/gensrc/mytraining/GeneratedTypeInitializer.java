@@ -97,6 +97,8 @@ public class GeneratedTypeInitializer extends AbstractTypeInitializer
 			
 				single_createattr_Organization_email();
 			
+				single_createattr_Organization_customersNumber();
+			
 		createRelationAttributes(
 			"MyCustomerOrganization", 
 			false, 
@@ -181,7 +183,7 @@ public class GeneratedTypeInitializer extends AbstractTypeInitializer
 					"Organization", 
 					"name",  
 					null,
-					"java.lang.String",
+					"localized:java.lang.String",
 					de.hybris.platform.jalo.type.AttributeDescriptor.READ_FLAG|de.hybris.platform.jalo.type.AttributeDescriptor.WRITE_FLAG|de.hybris.platform.jalo.type.AttributeDescriptor.OPTIONAL_FLAG|de.hybris.platform.jalo.type.AttributeDescriptor.REMOVE_FLAG|de.hybris.platform.jalo.type.AttributeDescriptor.SEARCH_FLAG,
 					null,
 					sqlColumnDefinitions
@@ -219,6 +221,19 @@ public class GeneratedTypeInitializer extends AbstractTypeInitializer
 					de.hybris.platform.jalo.type.AttributeDescriptor.READ_FLAG|de.hybris.platform.jalo.type.AttributeDescriptor.WRITE_FLAG|de.hybris.platform.jalo.type.AttributeDescriptor.OPTIONAL_FLAG|de.hybris.platform.jalo.type.AttributeDescriptor.REMOVE_FLAG|de.hybris.platform.jalo.type.AttributeDescriptor.SEARCH_FLAG,
 					null,
 					sqlColumnDefinitions
+				);
+			
+	}
+	
+	public void single_createattr_Organization_customersNumber() throws JaloBusinessException
+	{
+		
+				createDynamicAttribute(
+					"Organization", 
+					"customersNumber",  
+					"java.lang.Integer",
+					null,
+					de.hybris.platform.jalo.type.AttributeDescriptor.READ_FLAG|de.hybris.platform.jalo.type.AttributeDescriptor.OPTIONAL_FLAG|de.hybris.platform.jalo.type.AttributeDescriptor.REMOVE_FLAG|de.hybris.platform.jalo.type.AttributeDescriptor.SEARCH_FLAG
 				);
 			
 	}
@@ -290,6 +305,8 @@ public class GeneratedTypeInitializer extends AbstractTypeInitializer
 			single_setAttributeProperties_Organization_phone();
 		
 			single_setAttributeProperties_Organization_email();
+		
+			single_setAttributeProperties_Organization_customersNumber();
 		
 	}
 
@@ -424,6 +441,28 @@ public class GeneratedTypeInitializer extends AbstractTypeInitializer
 								null,
 								customPropsMap,
 								null
+							);
+						}
+					
+						public void single_setAttributeProperties_Organization_customersNumber() throws JaloBusinessException
+						{
+							
+							
+							
+							Map customPropsMap = new HashMap();
+							
+							setAttributeProperties(
+								"Organization", 
+								"customersNumber",
+								false, 
+								null,
+								null,
+								null,
+								true,
+								true,
+								null,
+								customPropsMap,
+								"customerNumberHandler"
 							);
 						}
 					

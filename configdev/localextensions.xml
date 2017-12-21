@@ -25,100 +25,11 @@
 		<extension name="mytraining" />
 		
 		<extension name="mytraininghmc" />
-		
-		<!-- ext-platform-optional -->
-
-												
-		<!-- <extension name="amazoncloud" />-->
-
-												
-		<!-- <extension name="azurecloud" />-->
-
-												
-		<!-- <extension name="bpmn" />-->
-
-												
-		<!-- <extension name="corepluscommons" />-->
-
-												
-		<!-- <extension name="deltadetection" />-->
-
-												
-		<!-- <extension name="y2ysync" />-->
-
-												
-		<!-- <extension name="embeddedserver" />-->
-
-												
-		<!-- <extension name="tomcatembeddedserver" />-->
-
-												
-		<!-- <extension name="gridfsstorage" />-->
-
-												
-		<!-- <extension name="groovynature" />-->
-
 												
 		<extension name="hmc" />
-
-												
-		<!-- <extension name="y2ysynchmc" />-->
-
-												
-		<!-- <extension name="dynamicwebservices" />-->
-
-												
-		<!-- <extension name="ldap" />-->
-
-												
-		<!-- <extension name="platformhmc" />-->
-
-												
-		<!-- <extension name="lucenesearch" />-->
-
-												
-		<!-- <extension name="platformwebservices" />-->
-
-												
-		<!-- <extension name="lucenesearchhmc" />-->
-
-												
-		<!-- <extension name="mediaconversion" />-->
-
-												
-		<!-- <extension name="mediaconversionhmc" />-->
-
-												
-		<!-- <extension name="scalanature" />-->
-
-												
-		<!-- <extension name="springintegrationlibs" />-->
-
-												
-		<!-- <extension name="virtualjdbc" />-->
-
-												
-		<!-- <extension name="y2ysyncdemoelectronics" />-->
-
-												
-		<!-- <extension name="patches" />-->
-
-												
-		<!-- <extension name="patchesdemo" />-->
-
 										
 		<!-- ext-template -->
 		<extension name="yempty" />
-
-												
-		<!-- <extension name="ygroovy" />-->
-
-												
-		<!-- <extension name="yhacext" />-->
-
-												
-		<!-- <extension name="yscala" />-->
-
 
 	</extensions>
 </hybrisconfig>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <application xmlns="http://www.zeroturnaround.com">
   <classpath>
-    <dir name="C:\Users\oleksandr_bohdan\Downloads\HYBRISCOMM6500P_0-80003045\hybris\bin\custom\mytraininghmc/hmc/classes" />
+    <dir name="C:\H\hybris\bin\custom\mytraininghmc/hmc/classes" />
   </classpath>
 </application>

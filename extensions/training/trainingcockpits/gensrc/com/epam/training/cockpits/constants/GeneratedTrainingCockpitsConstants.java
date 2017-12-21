@@ -1,7 +1,7 @@
 /*
  * ----------------------------------------------------------------
  * --- WARNING: THIS FILE IS GENERATED AND WILL BE OVERWRITTEN! ---
- * --- Generated at Dec 18, 2017 3:46:46 PM                     ---
+ * --- Generated at Dec 21, 2017 5:22:10 PM                     ---
  * ----------------------------------------------------------------
  */
 package com.epam.training.cockpits.constants;
