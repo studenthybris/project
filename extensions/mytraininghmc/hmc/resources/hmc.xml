@@ -21,10 +21,10 @@
             <result>
                 <listview mode="replace">
                     <itemlayout>
-                        <attribute name="id"  title="Organization.id"/>
-                        <attribute name="name"  title="Organization.name" />
-                        <attribute name="phone" title="Organization.phone" />
-                        <attribute name="email" title="Organization.email" />
+                        <attribute name="id"  />
+                        <attribute name="name"   />
+                        <attribute name="phone" />
+                        <attribute name="email"  />
                     </itemlayout>
                 </listview>
             </result>
