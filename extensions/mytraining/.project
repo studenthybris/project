@@ -3,6 +3,7 @@
 	<name>mytraining</name>
 	<comment></comment>
 	<projects>
+		<project>acceleratorservices</project>
 		<project>platform</project>
 	</projects>
 	<buildSpec>

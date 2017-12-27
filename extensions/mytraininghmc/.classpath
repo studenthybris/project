@@ -4,8 +4,9 @@
 	<classpathentry kind="src" output="eclipsebin/classes" path="testsrc"/>
 	<classpathentry kind="src" output="eclipsebin/web/classes" path="web/src"/>
 	<classpathentry kind="src" path="hmc/src"/>
-	<classpathentry excluding="src/|resources/" kind="src" path="hmc"/>
+	<classpathentry excluding="src/|resources/|classes/de/hybris/platform/mytraining/hmc/" kind="src" path="hmc"/>
 	<classpathentry kind="src" path="hmc/resources"/>
+	<classpathentry kind="src" path="hmc/classes/de/hybris/platform/mytraining/hmc"/>
 	<classpathentry exported="true" kind="lib" path="resources"/>
 	<classpathentry kind="src" output="eclipsebin/classes" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>

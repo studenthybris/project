@@ -72,7 +72,6 @@
 	</aop:config>
 	 -->
 
-	
 	<!-- some other examples of a pointcut that matches everything:
 
     	  <aop:pointcut id="profiledMethods" 
@@ -80,7 +79,9 @@
 	      	            !execution(* getPK(..))" />  	            
 	       <aop:pointcut id="profiledMethods" expression="execution(* *(..))" />	
 	  -->
-	<context:component-scan base-package="com.epam.training" />
+	<!--  <context:component-scan base-package="com.epam.training" /> -->
+	
+	<bean id="handler" class="com.epam.training.Handler" />
 	
     <bean id="mytrainingSystemSetup" class="com.epam.training.setup.MytrainingSystemSetup">
         <!-- constructor arg injection example -->
@@ -93,5 +94,8 @@
         <property name="mediaService" ref="mediaService"/>
         <property name="flexibleSearchService" ref="flexibleSearchService"/>
     </bean>
+    
+     <!-- Spring Integration -->
+    <!-- <import resource="classpath:/mytraining/integration/hot-folder-store-hybris-spring.xml"/> -->
 			
 </beans>

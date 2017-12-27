@@ -13,24 +13,21 @@ package com.epam.training;
 
 import de.hybris.platform.servicelayer.model.attribute.DynamicAttributeHandler;
 
-import org.springframework.stereotype.Component;
-
 import com.epam.training.model.OrganizationModel;
 
 
 /**
  *
  */
-@Component
-public class CustomerNumberHandler implements DynamicAttributeHandler<Integer, OrganizationModel>
+public class Handler implements DynamicAttributeHandler<Integer, OrganizationModel>
 {
 
 	@Override
 	public Integer get(final OrganizationModel arg0)
 	{
-		if (arg0.getCustomersNumber() != null)
+		if (arg0.getCustomer() != null)
 		{
-			return arg0.getCustomersNumber();
+			return new Integer(arg0.getCustomer().size());
 		}
 		return new Integer(0);
 	}

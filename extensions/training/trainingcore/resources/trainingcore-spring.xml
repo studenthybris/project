@@ -521,4 +521,7 @@
 
 	<import resource="/trainingcore/processes/quote/quote-post-cancellation-process-spring.xml"/>
 	
+	 <!-- Spring Integration -->
+    <import resource="classpath:/trainingcore/integration/hot-folder-store-hybris-spring.xml"/> 
+	
 </beans>

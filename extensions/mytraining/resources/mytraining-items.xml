@@ -16,12 +16,11 @@
 <items 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
 			xsi:noNamespaceSchemaLocation="items.xsd">
 
-			
 	<relations>
 		<relation code="MyCustomerOrganization" localized="false"
 			generate="true" autocreate="true">
 			<deployment table="myCustmerOrganization" typecode="20010" />
-			<sourceElement type="MyCustomer" qualifier="Customer"
+			<sourceElement type="Customer" qualifier="Customer"
 				cardinality="many" collectiontype="set">
 				<modifiers read="true" write="true" />
 			</sourceElement>
@@ -34,8 +33,7 @@
 			
 	<itemtypes>
 	
-	
-		<itemtype code="MyCustomer" generate="true" extends="Customer" autocreate="true">
+		<itemtype code="Customer" generate="false" autocreate="false" >
 			<attributes>
 				<attribute qualifier="status" type="java.lang.Boolean">
 					<modifiers read="true" write="true" />
@@ -70,9 +68,8 @@
 				</attribute>
 				<attribute qualifier="customersNumber" type="java.lang.Integer">
 					<modifiers read="true" write="false" />
-					<persistence type="dynamic" attributeHandler="customerNumberHandler" />
+					<persistence type="dynamic" attributeHandler="handler" />
 				</attribute>
-				
 			</attributes>
 		</itemtype>
 	

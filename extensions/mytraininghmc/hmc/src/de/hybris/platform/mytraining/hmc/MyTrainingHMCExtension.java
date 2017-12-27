@@ -33,6 +33,8 @@ import java.util.ResourceBundle;
 public class MyTrainingHMCExtension extends HMCExtension
 {
 
+	public final static String RESOURCE_PATH = "de.hybris.platform.mytraining.hmc.locales";
+
 	@Override
 	public List<EditorTabChip> getEditorTabChips(final DisplayState arg0, final AbstractEditorMenuChip arg1)
 	{
@@ -54,7 +56,7 @@ public class MyTrainingHMCExtension extends HMCExtension
 	@Override
 	public String getResourcePath()
 	{
-		return null;
+		return RESOURCE_PATH;
 	}
 
 	@Override

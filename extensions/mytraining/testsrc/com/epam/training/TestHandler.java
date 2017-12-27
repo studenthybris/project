@@ -13,6 +13,10 @@ package com.epam.training;
 
 import static org.junit.Assert.assertEquals;
 
+import de.hybris.platform.core.model.user.CustomerModel;
+
+import java.util.Set;
+
 import org.junit.Test;
 import org.mockito.Mockito;
 
@@ -22,17 +26,19 @@ import com.epam.training.model.OrganizationModel;
 /**
  *
  */
-public class TestCustomerNumberHandler
+public class TestHandler
 {
 	private final Integer CUSTOMERS_AMOUNT = new Integer(5);
-	private final CustomerNumberHandler handler = new CustomerNumberHandler();
+	private final Handler handler = new Handler();
 	private final OrganizationModel model = Mockito.mock(OrganizationModel.class);
+	private final Set<CustomerModel> customers = Mockito.mock(Set.class);
 
 	@Test
 	public void testGet()
 	{
 		final Integer expected = CUSTOMERS_AMOUNT;
-		Mockito.when(model.getCustomersNumber()).thenReturn(expected);
+		Mockito.when(customers.size()).thenReturn(expected);
+		Mockito.when(model.getCustomer()).thenReturn(customers);
 		final Integer actual = handler.get(model);
 		assertEquals(expected, actual);
 	}

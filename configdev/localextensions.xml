@@ -8,28 +8,30 @@
 
 		<path dir="${HYBRIS_BIN_DIR}" />
 
-		<extension name="trainingfulfilmentprocess" />
+		<extension name="trainingfulfilmentprocess" /> 
 
 		<extension name="trainingcore" />
 			
-		<extension name="traininginitialdata" />
+		<extension name="traininginitialdata" />  
 		
-		<extension name="trainingfacades" />
+		<extension name="trainingfacades" />  
 		
-		<extension name="trainingtest" />
+		<extension name="trainingtest" />	
 		
-		<extension name="trainingstorefront" />
+		<extension name="trainingstorefront" /> 
 		
-		<extension name="trainingcockpits" /> 
+		<extension name="trainingcockpits" />  
 		
 		<extension name="mytraining" />
 		
 		<extension name="mytraininghmc" />
 												
 		<extension name="hmc" />
-										
-		<!-- ext-template -->
-		<extension name="yempty" />
+		
+		
+		<!-- ext-accelerator -->
+		<extension name="acceleratorservices" />
 
-	</extensions>
+		
+		</extensions>
 </hybrisconfig>

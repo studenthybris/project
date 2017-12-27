@@ -1,7 +1,7 @@
 /*
  * ----------------------------------------------------------------
  * --- WARNING: THIS FILE IS GENERATED AND WILL BE OVERWRITTEN! ---
- * --- Generated at Dec 21, 2017 5:22:10 PM                     ---
+ * --- Generated at Dec 27, 2017 11:47:12 AM                    ---
  * ----------------------------------------------------------------
  */
 package com.epam.training.facades.constants;
