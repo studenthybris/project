@@ -1,6 +1,11 @@
 *.war
 *.ear
 *.class
+*.bak
+*.classpath
+*.classpath.bak
+*.project
+*.settings/*
 
 /extensions/smartlingcore/extensioninfo.xsd
 /extensions/smartlingcore/eclipsebin
