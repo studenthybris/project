@@ -1,7 +1,7 @@
 /*
  * ----------------------------------------------------------------
  * --- WARNING: THIS FILE IS GENERATED AND WILL BE OVERWRITTEN! ---
- * --- Generated at Dec 27, 2017 2:22:20 PM                     ---
+ * --- Generated at Jan 2, 2018 2:25:44 PM                      ---
  * ----------------------------------------------------------------
  */
 package com.epam.training.core.jalo;

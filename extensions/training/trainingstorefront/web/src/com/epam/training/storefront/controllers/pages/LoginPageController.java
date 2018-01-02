@@ -11,10 +11,11 @@
 package com.epam.training.storefront.controllers.pages;
 
 import de.hybris.platform.acceleratorstorefrontcommons.controllers.pages.AbstractLoginPageController;
+import de.hybris.platform.acceleratorstorefrontcommons.controllers.util.GlobalMessages;
 import de.hybris.platform.acceleratorstorefrontcommons.forms.RegisterForm;
+import de.hybris.platform.acceleratorstorefrontcommons.security.BruteForceAttackCounter;
 import de.hybris.platform.cms2.exceptions.CMSItemNotFoundException;
 import de.hybris.platform.cms2.model.pages.AbstractPageModel;
-import com.epam.training.storefront.controllers.ControllerConstants;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
@@ -22,6 +23,8 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import org.apache.commons.lang.StringUtils;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.security.web.savedrequest.HttpSessionRequestCache;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -32,6 +35,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
+import com.epam.training.storefront.controllers.ControllerConstants;
+
 
 /**
  * Login Controller. Handles login and register for the account flow.
@@ -40,7 +45,13 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 @RequestMapping(value = "/login")
 public class LoginPageController extends AbstractLoginPageController
 {
+
+	private final String UID_ATTRIBUTE = "SPRING_SECURITY_LAST_USERNAME";
+
 	private HttpSessionRequestCache httpSessionRequestCache;
+	@Autowired
+	@Qualifier("myBruteForceAttackCounter")
+	private BruteForceAttackCounter attackHandler;
 
 	@Override
 	protected String getView()
@@ -80,6 +91,11 @@ public class LoginPageController extends AbstractLoginPageController
 		if (!loginError)
 		{
 			storeReferer(referer, request, response);
+		}else {
+			if (attackHandler.isAttack((String) session.getAttribute(UID_ATTRIBUTE)))
+			{
+				GlobalMessages.addErrorMessage(model, "account.error.account.ban");
+			}
 		}
 		return getDefaultLoginPage(loginError, session, model);
 	}

@@ -511,6 +511,11 @@
 		<property name="eventService" ref="eventService" />
 		<property name="timeService" ref="timeService" />
 	</bean>
+	
+	<!--  Dao   -->
+	
+	<bean id="customerDao" class="com.epam.training.core.dao.impl.CustomerDaoImpl" />
+	
 
 	<import resource="/trainingcore/processes/quote/quote-buyer-process-spring.xml"/>
 	<import resource="/trainingcore/processes/quote/quote-salesrep-process-spring.xml"/>
